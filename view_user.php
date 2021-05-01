@@ -66,14 +66,14 @@
         <td><?php echo $user_name;?></td>
 		<td><?php echo $user_email;?></td>
 		<td><?php echo $user_password;?></td>
-		<td><?php echo $user_image;?></td> 
+		<td><img src="upload/<?php echo $user_image;?>" height="70px"></td> 
 		<td><?php echo $user_details;?></td> 
         <td><a class="btn btn-danger" href="view_user.php?del=<?php echo $user_id; ?>">Delete</a></td>
 		 <td><a class="btn btn-success" href="edit_user.php?edit=<?php echo $user_id; ?>">Edit</a></td>  
 		 
 	</tr>
 		 <?php } ?>
-      
+      <a class="btn btn-success" herf="add-user.php">add user</a>
 </div>
 
 </body>
